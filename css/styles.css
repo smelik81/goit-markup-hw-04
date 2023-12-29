@@ -1,0 +1,293 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+img {
+    display: block;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF;
+    color: #434455;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+    max-width: 1158px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.about-title,
+.team-title,
+.products-title {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+}
+.about-subtitle,
+.team-subtitle,
+.products-subtitle {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.about-description,
+.team-description,
+.products-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+.header-logo,
+.footer-logo {
+    color: #4D5AE5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 115px;
+}
+.header-logo {
+    margin-right: 76px;
+}
+.header-logo span,
+.footer-logo span {
+    color: #2E2F42;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.header-menu {
+    display: flex;
+    width: 261px;
+    gap: 40px;
+}
+
+.header-menu-home {
+    display: inline-block;
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+}
+.header-menu-home:hover,
+.header-menu-home:focus {
+    color: #404BBF;
+}
+.header-info {
+    display: flex;
+    gap: 40px;
+}
+.header-info-link {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.header-info-link:hover,
+.header-info-link:focus {
+    color: #404BBF;
+}
+.header-adres {
+    font-style: normal;
+}
+.main-info {
+    background-color: #2E2F42;
+    padding: 188px 0;
+}
+
+.main-info-title {
+    max-width: 496px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+.main-info .btn {
+    background-color: #4D5AE5;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    min-width: 169px;
+    display: block;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: 48px auto;
+    border: none;
+}
+.main-info .btn:hover,
+.main-info .btn:focus {
+    background-color: #404BBF;
+}
+
+.about {
+    padding: 120px 0;
+}
+.about-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.about-list-item {
+    text-align: start;
+    width: calc((100% - 3 * 24px) / 4);
+}
+.about-subtitle {
+    margin-bottom: 8px;
+}
+.team {
+    padding: 120px 0;
+    background-color: #F4F4FD;
+}
+.team-title {
+    margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.team-card {
+    background-color: #ffffff;
+    width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0 0 4px 4px;
+}
+.team-img {
+    margin-bottom: 32px;
+    width: 100%;
+}
+.team-info-block {
+    padding: 32px 0;
+}
+.team-info-block .team-subtitle {
+    margin-bottom: 8px;
+    text-align: center;
+}
+.team-info-block .team-description {
+    text-align: center;
+}
+
+/*.team-subtitle {
+    margin-bottom: 8px;
+    text-align: center;
+}
+.team-description {
+    text-align: center;
+    padding-bottom: 32px;
+}*/
+.products {
+    padding: 120px 0;
+}
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.products-list-item {
+    width: calc((100% - 2 * 24px) / 3);
+}
+.products-info-block {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+.products-title {
+    margin-bottom: 72px;
+}
+.products-img {
+    margin-bottom: 32px;
+    width: 100%;
+}
+.products-subtitle {
+    margin-bottom: 8px;
+}
+
+/*.products-subtitle {
+    margin-bottom: 8px;
+    padding-left: 16px;
+    text-align: start;
+}
+.products-description {
+    padding: 0 16px 32px;
+    text-align: start;
+}*/
+
+.footer {
+    background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.footer .footer-span {
+    color: #F4F4FD;
+}
+.footer-description {
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+
