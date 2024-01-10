@@ -69,6 +69,16 @@ body {
 a {
     text-decoration: none;
 }
+.footer-soc-icon,
+.team-soc-icon {
+    fill: #4d5ae5;
+}
+
+/*!----------------------GLOBAL---------------------*/
+
+/*?-------------------------------------------------*/
+
+
 .header {
     border-bottom: 1px solid #E7E9FC;
 }
@@ -119,7 +129,22 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    position: relative;
 }
+.header-menu-home.active {
+    color: #404BBF;
+}
+.header-menu-home.active:after {
+    content: "";
+    display: block;
+    background-color: #404BBF;
+    height: 4px;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    border-radius: 2px;
+}
+
 .header-menu-home:hover,
 .header-menu-home:focus {
     color: #404BBF;
@@ -142,9 +167,21 @@ a {
 .header-adres {
     font-style: normal;
 }
+
+
+/*!----------------------HEADER---------------------*/
+
+/*?-------------------------------------------------*/
+
+
+
 .main-info {
     padding: 188px 0;
     background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1440px, cover;
 }
 .main-info-title {
     max-width: 496px;
@@ -156,7 +193,7 @@ a {
     color: #FFFFFF;
     margin: 0 auto;
 }
-.main-info .btn {
+.main-btn {
     background-color: #4D5AE5;
     color: #ffffff;
     font-size: 16px;
@@ -170,15 +207,30 @@ a {
     padding: 16px 32px;
     margin: 48px auto;
     border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.main-info .btn:hover,
-.main-info .btn:focus {
+.main-btn:hover,
+.main-btn:focus {
     background-color: #404BBF;
 }
+
+
+/*!----------------------MAIN---------------------*/
+
+/*?-------------------------------------------------*/
+
 
 .about {
     padding: 120px 0;
 }
+.about-block {
+    border-radius: 4px;
+    border: 1px solid #8E8F98;
+    background-color: #F4F4FD;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
+
 .about-list {
     display: flex;
     justify-content: space-between;
@@ -191,6 +243,15 @@ a {
 .about-subtitle {
     margin-bottom: 8px;
 }
+.about-icon {
+    fill: #4D5AE5;
+}
+
+/*!----------------------ABOUT---------------------*/
+
+/*?-------------------------------------------------*/
+
+
 .team {
     padding: 120px 0;
     background-color: #F4F4FD;
@@ -204,23 +265,35 @@ a {
     gap: 24px;
 }
 .team-card {
-    background-color: #ffffff;
     width: calc((100% - 3 * 24px) / 4);
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px; 
+    background-color: #ffffff;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+/*.team-card:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}*/
 .team-img {
     margin-bottom: 32px;
     width: 100%;
 }
 .team-info-block {
+    display: flex;
     padding: 32px 0;
+    flex-direction: column;
 }
 .team-info-block .team-subtitle {
-    margin-bottom: 8px;
+    
     text-align: center;
 }
 .team-info-block .team-description {
     text-align: center;
+}
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
 }
 
 /*.team-subtitle {
@@ -231,6 +304,13 @@ a {
     text-align: center;
     padding-bottom: 32px;
 }*/
+
+
+/*!----------------------TEAM---------------------*/
+
+/*?-------------------------------------------------*/
+
+
 .products {
     padding: 120px 0;
 }
@@ -240,6 +320,7 @@ a {
     justify-content: space-between;
     column-gap: 24px;
     row-gap: 48px;
+    cursor: pointer;
 }
 .products-list-item {
     width: calc((100% - 2 * 24px) / 3);
@@ -249,6 +330,10 @@ a {
     border: 1px solid #E7E9FC;
     border-top: none;
 }
+.products-list-item:hover .products-info-block {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 .products-title {
     margin-bottom: 72px;
 }
@@ -270,10 +355,23 @@ a {
     text-align: start;
 }*/
 
+
+/*!----------------------PRODUCTS---------------------*/
+
+/*?-------------------------------------------------*/
+
+
 .footer {
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+.footer-block {
+    display: flex;
+}
+.footer-info {
+    margin-left: 156px;
+    margin-right: 120px;
 }
 .footer-logo {
     display: inline-block;
@@ -289,4 +387,21 @@ a {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
-
+.footer-social {
+    padding-bottom: 32px;
+}
+.footer-social-description {
+    color: #F4F4FD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+    margin-bottom: 16px;
+}
+.footer-soc-list {
+    display: flex;
+    gap: 16px;
+}
+.footer-soc-icon:hover {
+    fill: #31D0AA;
+}
