@@ -471,11 +471,12 @@ a {
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-.footer-soc-item:hover .footer-soc-link,
+.footer-soc-item:hover .footer-soc-link {
+    background-color: #31D0AA;
+}
 .footer-soc-item:focus .footer-soc-link {
     background-color: #31D0AA;
 }
-
 .footer-soc-icon {
     fill: currentColor;
 }
